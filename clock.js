@@ -16,5 +16,9 @@ $(document).ready(function() {
       seconds = "0" + seconds
     }
     $("#clock").html(`${hours}:${minutes}:${seconds}`)
+
+    var hex1 = hours.toString(16) + minutes.toString(16) + seconds.toString(16)
+    $("#hexCode").html(`#${hex1}`)
+    $("body").css("background-color", `#${hex1}`)
   }, 1000)
 })

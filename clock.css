@@ -14,20 +14,15 @@ body {
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
     rgb(0, 0, 255) 14%,
     rgb(63.75, 63.75, 255) 41%,
     rgb(127.5, 127.5, 255) 53%
-  );
-
-  /* radial-gradient(
-   rgb(0, 8, 255),
-    rgb(127.5, 127.5, 255),
-    rgb(0, 8, 255)
   ); */
 }
 
-#clock {
+#clock,
+#hexCode {
   color: black;
   font-size: 80px;
   font-family: Orbitron, sans-serif;
