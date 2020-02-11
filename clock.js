@@ -6,6 +6,8 @@ $(document).ready(function() {
       hours = "0" + (hours - 12)
     } else if (hours === 0) {
       hours = 12
+    } else if (hours < 10) {
+      hours = "0" + hours
     }
     var minutes = time.getMinutes()
     var seconds = time.getSeconds()
